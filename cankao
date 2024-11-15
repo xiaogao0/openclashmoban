@@ -1,2 +1,17 @@
 openClash 配置参考：https://github.com/ACL4SSR/ACL4SSR/blob/master/Clash/config/ACL4SSR.ini
 openClash 域名规则表：https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Clash
+
+
+在线更新不了（安装不能用下，使用下列方法安装）
+https://github.com/vernesong/OpenClash/releases
+用WinSCP.exe将luci-app-openclash_0.46.050-beta_all.ipk上传到/tmp文件夹内
+SSH连接上
+cd /tmp
+opkg install luci-app-openclash_0.46.050-beta_all.ipk   #安装指令
+
+
+游戏进不去，卡顿，在防火墙配置中加入以下命令
+iptables -t nat -A POSTROUTING -d 172.16.0.0/12 -o br-lan -j ACCEPT
+iptables -t nat -A POSTROUTING -d 127.0.0.0/8 -o br-lan -j ACCEPT
+iptables -t nat -A POSTROUTING -d 10.0.0.0/8 -o br-lan -j ACCEPT
+iptables -t nat -A POSTROUTING -o br-lan -j SNAT --to 你的软路由ip
