@@ -1,5 +1,6 @@
 # 香港
 DOMAIN-SUFFIX,hlove.tv
+DOMAIN-SUFFIX,hrtn.net
 DOMAIN-SUFFIX,iptv200.com
 DOMAIN-SUFFIX,ymedium.top
 DOMAIN-SUFFIX,mytvsuper.com.mp
@@ -47,3 +48,6 @@ DOMAIN-SUFFIX,livednow.com
 DOMAIN-SUFFIX,mytvsuper.us.kg
 DOMAIN-KEYWORD,encoreTVB
 DOMAIN-KEYWORD,mytv
+# 漏网之鱼
+DOMAIN-SUFFIX,lioncdn.net
+DOMAIN-SUFFIX,passwdword.xyz
